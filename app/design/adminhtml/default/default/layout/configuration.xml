@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+  <configuration_adminhtml_configuration_index>
+	<reference name="content">
+	  <block type="configuration/adminhtml_configuration" name="configuration" />
+	</reference>
+  </configuration_adminhtml_configuration_index>
+  <configuration_adminhtml_configuration_import>
+	<reference name="head">
+		<action method="addJs">
+			<script>wtc/dropzone/dropzone.js</script>
+		</action>
+		<action method="addCss">
+			<script>wtc/dropzone/dropzone.css</script>
+		</action>		
+	</reference>
+	<reference name="content">
+	  <block type="configuration/adminhtml_configuration" name="import_configuration" template="configuration/import.phtml"/>
+	</reference>
+  </configuration_adminhtml_configuration_import>
+</layout>
